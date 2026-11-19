@@ -1386,13 +1386,19 @@
 
 			.brand {
 				width: 170px;
-				height: 70px
+				height: 70px;
+				display: flex;
+				align-items: center;
+				overflow: hidden;
 			}
 
 			.brand img {
-				width: 184px;
-				height: 184px;
-				margin: -56px 0 0 -7px
+				max-width: 100%;
+				max-height: 60px;
+				width: auto;
+				height: auto;
+				margin: 0;
+				object-fit: contain;
 			}
 
 			.toggle {
