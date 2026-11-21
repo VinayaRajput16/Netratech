@@ -1,868 +1,1053 @@
-<!-- get_header('Page Name','Title')-->
 <!doctype html>
-<html class="no-js" lang="en">
-
-<!-- Mirrored from html.xpeedstudio.com/upturn/social-media-marketing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Aug 2024 03:37:31 GMT -->
+<html lang="en">
 <head>
 <meta charset="utf-8">
-<meta http-equiv="x-ua-compatible" content="ie=edge">
-<title> Social Media Marketing in Dhanori</title>
-<meta name="description" content>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900%7COpen+Sans:400,700,700i" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Social Media Marketing in Dhanori</title>
+<meta name="description" content="">
 <link rel="icon" type="image/png" href="favicon.html">
-
 <link rel="apple-touch-icon" href="apple-touch-icon.html">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/animate.css">
-<link rel="stylesheet" href="assets/css/iconfont.css">
-<link rel="stylesheet" href="assets/css/magnific-popup.css">
-<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-<link rel="stylesheet" href="assets/css/rev-settings.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
 
-<link rel="stylesheet" href="assets/css/plugins.css" />
+		:root {
+			--navy: #141829;
+			--navy-2: #0d1020;
+			--navy-3: #1b2038;
+			--blue: #1e6bff;
+			--cyan: #2aa7ef;
+			--violet: #6a5cff;
+			--ink: #141829;
+			--text: #4a5270;
+			--muted: #8089a6;
+			--bg: #f5f7fc;
+			--card: #fff;
+			--line: #e4e8f3;
+			--grad: linear-gradient(135deg, #0b5ed7, #2aa7ef);
+			--radius: 18px;
+			--shadow: 0 18px 50px -18px rgba(20, 24, 41, .25);
+		}
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0
+		}
+		html {
+			scroll-behavior: smooth
+		}
+		body {
+			font-family: Manrope, system-ui, sans-serif;
+			color: var(--text);
+			background: #fff;
+			line-height: 1.65;
+			-webkit-font-smoothing: antialiased
+		}
+		img {
+			max-width: 100%;
+			display: block
+		}
+		a {
+			color: inherit;
+			text-decoration: none
+		}
+		ul {
+			list-style: none
+		}
+		h1,
+		h2,
+		h3,
+		h4 {
+			font-family: Sora, Manrope, sans-serif;
+			color: var(--ink);
+			line-height: 1.15;
+			letter-spacing: -.02em
+		}
+		.wrap {
+			max-width: 1180px;
+			margin: 0 auto;
+			padding: 0 20px
+		}
+		.eyebrow {
+			display: inline-block;
+			font-size: 13px;
+			font-weight: 700;
+			letter-spacing: .14em;
+			text-transform: uppercase;
+			color: var(--blue);
+			margin-bottom: 14px
+		}
+		.sec-head {
+			max-width: 640px;
+			margin: 0 auto 52px;
+			text-align: center
+		}
+		.sec-head h2 {
+			font-size: clamp(28px, 4vw, 42px)
+		}
+		.sec-head p {
+			margin-top: 14px;
+			color: var(--text)
+		}
+		section {
+			padding: 96px 0
+		}
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			gap: 9px;
+			padding: 14px 26px;
+			border-radius: 50px;
+			font-weight: 700;
+			font-size: 15px;
+			border: 0;
+			cursor: pointer;
+			transition: transform .2s, box-shadow .2s, background .2s
+		}
+		.btn svg {
+			width: 18px;
+			height: 18px
+		}
+		.btn-primary {
+			background: var(--grad);
+			color: #fff;
+			box-shadow: 0 10px 26px rgba(30, 107, 255, .38)
+		}
+		.btn-primary:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 14px 32px rgba(30, 107, 255, .5)
+		}
+		.btn-ghost {
+			background: rgba(255, 255, 255, .08);
+			color: #fff;
+			border: 1px solid rgba(255, 255, 255, .22)
+		}
+		.btn-ghost:hover {
+			background: rgba(255, 255, 255, .16)
+		}
+		.btn-dark {
+			background: var(--navy);
+			color: #fff
+		}
+		.btn-dark:hover {
+			background: var(--blue)
+		}
+		.btn-line {
+			background: #fff;
+			color: var(--ink);
+			border: 1.5px solid var(--line)
+		}
+		.btn-line:hover {
+			border-color: var(--blue);
+			color: var(--blue)
+		}
+		:focus-visible {
+			outline: 3px solid var(--cyan);
+			outline-offset: 3px;
+			border-radius: 6px
+		}
+		/* Top bar */
+		.topbar {
+			background: var(--navy-2);
+			font-size: 14px;
+			color: #9aa4c4;
+			border-bottom: 1px solid rgba(255, 255, 255, .06)
+		}
+		.topbar .wrap {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			min-height: 40px;
+			gap: 16px
+		}
+		.topbar ul {
+			display: flex;
+			gap: 24px
+		}
+		.topbar a {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			transition: color .2s
+		}
+		.topbar a:hover {
+			color: #fff
+		}
+		.topbar svg {
+			width: 15px;
+			height: 15px;
+			color: var(--cyan)
+		}
+		/* Header */
+		.header {
+			position: sticky;
+			top: 0;
+			z-index: 50;
+			background: var(--navy);
+			box-shadow: 0 6px 24px rgba(0, 0, 0, .25)
+		}
+		.header::after {
+			content: "";
+			position: absolute;
+			inset: auto 0 0 0;
+			height: 3px;
+			background: linear-gradient(90deg, #0b5ed7, var(--cyan), var(--violet))
+		}
+		.bar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			min-height: 80px
+		}
+		.brand {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			width: 220px;
+			height: 80px;
+			flex-shrink: 0;
+		}
+		.brand img {
+			max-width: 100%;
+			max-height: 70px;
+			width: auto;
+			height: auto;
+			object-fit: contain;
+		}
+		.nav {
+			display: flex;
+			align-items: center;
+			gap: 6px
+		}
+		.menu {
+			display: flex;
+			gap: 2px
+		}
+		.menu a {
+			display: block;
+			padding: 10px 16px;
+			color: #e6eaf6;
+			font-weight: 600;
+			font-size: 15.5px;
+			border-radius: 8px;
+			position: relative;
+			transition: color .2s
+		}
+		.menu a::after {
+			content: "";
+			position: absolute;
+			left: 16px;
+			right: 16px;
+			bottom: 4px;
+			height: 2px;
+			background: var(--cyan);
+			transform: scaleX(0);
+			transform-origin: left;
+			transition: transform .25s
+		}
+		.menu a:hover,
+		.menu a.active {
+			color: #fff
+		}
+		.menu a:hover::after,
+		.menu a.active::after {
+			transform: scaleX(1)
+		}
+		.nav .btn {
+			margin-left: 12px;
+			padding: 11px 22px
+		}
+		.toggle {
+			display: none;
+			width: 44px;
+			height: 44px;
+			border: 1px solid rgba(255, 255, 255, .18);
+			background: transparent;
+			border-radius: 10px;
+			cursor: pointer;
+			position: relative
+		}
+		.toggle span,
+		.toggle span::before,
+		.toggle span::after {
+			position: absolute;
+			left: 11px;
+			width: 20px;
+			height: 2px;
+			background: #fff;
+			border-radius: 2px;
+			transition: .25s;
+			content: ""
+		}
+		.toggle span {
+			top: 21px
+		}
+		.toggle span::before {
+			left: 0;
+			top: -6px
+		}
+		.toggle span::after {
+			left: 0;
+			top: 6px
+		}
+		.toggle.open span {
+			background: transparent
+		}
+		.toggle.open span::before {
+			top: 0;
+			transform: rotate(45deg)
+		}
+		.toggle.open span::after {
+			top: 0;
+			transform: rotate(-45deg)
+		}
+		/* CTA */
+		.cta {
+			padding: 0 0 96px;
+			background: var(--bg)
+		}
+		.cta-box {
+			background: var(--navy);
+			border-radius: 30px;
+			padding: 64px 40px;
+			text-align: center;
+			position: relative;
+			overflow: hidden;
+			color: #b7c0de
+		}
+		.cta-box::before {
+			content: "";
+			position: absolute;
+			inset: 0;
+			background: radial-gradient(600px 300px at 15% 0, rgba(42, 167, 239, .3), transparent 60%), radial-gradient(600px 300px at 90% 100%, rgba(106, 92, 255, .35), transparent 60%)
+		}
+		.cta-box>* {
+			position: relative
+		}
+		.cta-box h2 {
+			color: #fff;
+			font-size: clamp(28px, 4vw, 42px);
+			max-width: 680px;
+			margin: 0 auto 14px
+		}
+		.cta-box p {
+			max-width: 520px;
+			margin: 0 auto 32px
+		}
+		.cta-box .actions {
+			display: flex;
+			gap: 14px;
+			justify-content: center;
+			flex-wrap: wrap
+		}
+		/* Footer */
+		footer {
+			background: var(--navy-2);
+			color: #9aa4c4;
+			padding: 72px 0 0;
+			font-size: 15px
+		}
+		.f-grid {
+			display: grid;
+			grid-template-columns: 1.2fr .8fr .8fr 1.4fr;
+			gap: 40px
+		}
+		footer h4 {
+			color: #fff;
+			font-size: 16px;
+			margin-bottom: 18px
+		}
+		footer li {
+			margin-bottom: 10px
+		}
+		footer li a:hover {
+			color: #fff
+		}
+		.f-about p {
+			margin-bottom: 16px;
+			max-width: 300px
+		}
+		.f-about a.line {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			margin-bottom: 10px
+		}
+		.f-about a.line:hover {
+			color: #fff
+		}
+		.f-about svg {
+			width: 16px;
+			height: 16px;
+			color: var(--cyan);
+			flex-shrink: 0
+		}
+		.map {
+			border-radius: 16px;
+			overflow: hidden;
+			border: 1px solid rgba(255, 255, 255, .1)
+		}
+		.map iframe {
+			width: 100%;
+			height: 210px;
+			border: 0;
+			display: block
+		}
+		.copy {
+			margin-top: 56px;
+			border-top: 1px solid rgba(255, 255, 255, .08);
+			padding: 22px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 14px;
+			font-size: 14px
+		}
+		.social {
+			display: flex;
+			gap: 8px
+		}
+		.social a {
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, .07);
+			display: grid;
+			place-items: center;
+			transition: background .2s
+		}
+		.social a:hover {
+			background: var(--blue);
+			color: #fff
+		}
+		.social svg {
+			width: 17px;
+			height: 17px
+		}
+		/* Floating buttons */
+		.wa {
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			z-index: 60;
+			width: 58px;
+			height: 58px;
+			border-radius: 50%;
+			background: #25d366;
+			display: grid;
+			place-items: center;
+			box-shadow: 0 10px 26px rgba(37, 211, 102, .5);
+			transition: transform .2s
+		}
+		.wa:hover {
+			transform: scale(1.08)
+		}
+		.wa svg {
+			width: 30px;
+			height: 30px;
+			color: #fff
+		}
+		/* Reveal */
+		.rv {
+			opacity: 0;
+			transform: translateY(24px);
+			transition: opacity .7s, transform .7s
+		}
+		.rv.in {
+			opacity: 1;
+			transform: none
+		}
+		.no-js .rv {
+			opacity: 1;
+			transform: none
+		}
+		@media (prefers-reduced-motion:reduce) {
+			* {
+				animation: none !important;
+				transition: none !important
+			}
+			.rv {
+				opacity: 1;
+				transform: none
+			}
+		}
+/* Page banner: compact version of the index hero */
+.page-hero{position:relative;overflow:hidden;color:#c9d0e8;padding:72px 0 84px;background:radial-gradient(800px 420px at 88% 0%,rgba(106,92,255,.34),transparent 60%),radial-gradient(640px 420px at 4% 100%,rgba(42,167,239,.22),transparent 60%),var(--navy)}
+.page-hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px);background-size:56px 56px;-webkit-mask-image:radial-gradient(ellipse at 30% 40%,#000 25%,transparent 75%);mask-image:radial-gradient(ellipse at 30% 40%,#000 25%,transparent 75%)}
+.page-hero .wrap{position:relative}
+.crumbs{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;font-size:14px;font-weight:600;color:#9aa4c4;margin-bottom:20px}
+.crumbs li{display:inline-flex;align-items:center;gap:12px}
+.crumbs li+li::before{content:"";width:7px;height:7px;border-top:2px solid #5d688f;border-right:2px solid #5d688f;transform:rotate(45deg)}
+.crumbs a{transition:color .2s}
+.crumbs a:hover{color:#fff}
+.crumbs [aria-current]{color:#fff}
+.page-hero h1{color:#fff;font-size:clamp(34px,5.2vw,56px);font-weight:800;max-width:900px}
+@media(max-width:991px){.page-hero{padding:52px 0 60px}}
+.checks {
+			margin: 18px 0 26px;
+			display: grid;
+			gap: 10px
+		}
+		.checks li {
+			display: flex;
+			gap: 10px;
+			align-items: flex-start;
+			font-weight: 600;
+			color: var(--ink);
+			font-size: 15px
+		}
+		.checks svg {
+			width: 20px;
+			height: 20px;
+			color: #12a66a;
+			flex-shrink: 0;
+			margin-top: 2px
+		}
+/* alignment tweak taken from the hand edit in search-engine-optimization_1.html */
+.split .checks li{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.split .checks li svg{width:22px;height:22px;min-width:22px;flex-shrink:0;margin-top:0}
+.alt{background:var(--bg)}
+.sec-head.left{margin-left:0;margin-right:0;text-align:left}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split.flip>:first-child{order:2}
+.split h2,.split h3{font-size:clamp(26px,3.4vw,38px);margin-bottom:18px}
+.split p{margin-bottom:16px}
+.split .checks{margin:22px 0 28px}
+.split .btn+.btn{margin-left:10px}
+.frame{position:relative;background:var(--bg);border:1px solid var(--line);border-radius:26px;padding:28px}
+.alt .frame{background:#fff}
+.frame>img{width:100%;height:auto;border-radius:14px}
+.photo{border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.photo img{width:100%;height:100%;object-fit:cover}
+.hl{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.center-cta{text-align:center;margin-top:44px}
+.btn.sm{padding:11px 22px;font-size:14.5px}
+.btn-outline{background:transparent;color:var(--blue);border:1.5px solid var(--blue)}
+.btn-outline:hover{background:var(--blue);color:#fff}
+.cta.on-white{background:#fff}
+.cta-box.nop h2{margin-bottom:30px}
+@media(max-width:991px){.split{grid-template-columns:1fr;gap:40px}.split.flip>:first-child{order:0}}
+.sec-head.wide{max-width:860px}
+.sec-head.wide h2{font-size:clamp(24px,3.2vw,34px)}
+.btn:focus-visible{border-radius:50px}
+.blk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.blk{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:34px 30px;transition:transform .25s,box-shadow .25s}
+.blk:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.blk .tile{width:64px;height:64px;border-radius:18px;background:var(--bg);display:grid;place-items:center;margin-bottom:22px}
+.blk .tile img{max-width:38px;max-height:38px;object-fit:contain}
+.blk h3{font-size:20px;margin-bottom:10px}
+.wide-img{margin:52px auto 0;max-width:880px}
+.wide-img img{margin:0 auto;border-radius:18px}
+.btn-row{display:flex;flex-wrap:wrap;gap:14px;justify-content:center;margin-top:36px}
+.rings{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.ring{text-align:center}
+.ring-box{position:relative;width:min(124px,100%);aspect-ratio:1;margin:0 auto 12px}
+.ring-box svg{width:100%;height:100%;transform:rotate(-90deg);display:block}
+.ring .bg{fill:none;stroke:var(--line);stroke-width:9}
+.ring .fg{fill:none;stroke:url(#ringGrad);stroke-width:9;stroke-linecap:round;stroke-dasharray:314.16;stroke-dashoffset:314.16;transition:stroke-dashoffset 1.4s cubic-bezier(.2,.7,.2,1)}
+.ring.in .fg,.no-js .ring .fg{stroke-dashoffset:var(--off)}
+.ring-box b{position:absolute;inset:0;display:grid;place-items:center;font:800 24px Sora;color:var(--ink)}
+.ring p{font-weight:700;color:var(--ink);font-size:15px;margin:0}
+.boost{display:grid;gap:22px;margin:28px 0 34px;counter-reset:b}
+.boost li{display:grid;grid-template-columns:44px 1fr;gap:16px;align-items:start}
+.boost li::before{counter-increment:b;content:counter(b);width:44px;height:44px;border-radius:50%;background:var(--grad);color:#fff;font:800 17px Sora;display:grid;place-items:center}
+.boost a{color:var(--blue);font-weight:700}
+.boost a:hover{text-decoration:underline}
+@media(max-width:991px){.blk-grid{grid-template-columns:1fr;max-width:520px;margin:0 auto}}
+@media(max-width:480px){.rings{gap:8px}.ring-box b{font-size:20px}}
+.track-nav{display:flex;gap:10px;justify-content:flex-end;margin-bottom:18px}
+.round{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:#fff;color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:border-color .2s,color .2s,background .2s}
+.round:hover:not([disabled]){border-color:var(--blue);color:var(--blue)}
+.round[disabled]{opacity:.4;cursor:default}
+.round svg{width:20px;height:20px}
+.track{display:flex;gap:24px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 26px;margin:0 -4px;scrollbar-width:thin;scrollbar-color:#cfd6ea transparent}
+.track::-webkit-scrollbar{height:8px}
+.track::-webkit-scrollbar-thumb{background:#cfd6ea;border-radius:8px}
+.track>*{scroll-snap-align:start}
+.case{position:relative;flex:0 0 min(340px,84%);background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden;transition:transform .25s,box-shadow .25s}
+.case:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.case .thumb{aspect-ratio:4/3;background:var(--bg)}
+.case .thumb img{width:100%;height:100%;object-fit:cover}
+.case-body{padding:22px 24px 24px}
+.case h3{font-size:18px;margin-bottom:6px}
+.case h3 a::after{content:"";position:absolute;inset:0}
+.case:hover h3 a{color:var(--blue)}
+.case p{font-size:14px;color:var(--muted)}
+.round:focus-visible{border-radius:50%}
+/* Testimonials */
+		.t-grid {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			gap: 24px
+		}
+		.t-card {
+			background: #fff;
+			border: 1px solid var(--line);
+			border-radius: var(--radius);
+			padding: 32px;
+			display: flex;
+			flex-direction: column;
+			gap: 22px;
+			transition: box-shadow .25s, transform .25s
+		}
+		.t-card:hover {
+			box-shadow: var(--shadow);
+			transform: translateY(-4px)
+		}
+		.stars {
+			color: #f5b301;
+			letter-spacing: 3px;
+			font-size: 17px
+		}
+		.t-card blockquote {
+			color: var(--ink);
+			font-weight: 500;
+			flex: 1
+		}
+		.who {
+			display: flex;
+			align-items: center;
+			gap: 13px
+		}
+		.av {
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			background: var(--grad);
+			color: #fff;
+			display: grid;
+			place-items: center;
+			font: 700 16px Sora
+		}
+		.who b {
+			display: block;
+			color: var(--ink);
+			font-family: Sora;
+			font-size: 15px
+		}
+		.who span {
+			font-size: 13px;
+			color: var(--muted)
+		}
+.t-grid.two{grid-template-columns:repeat(2,1fr)}
+.who img{width:48px;height:48px;border-radius:50%;object-fit:cover;background:var(--bg);flex-shrink:0}
+.t-card blockquote{font-size:16.5px}
+@media(max-width:991px){.t-grid,.t-grid.two{grid-template-columns:1fr;max-width:560px;margin:0 auto}}
+@media(max-width:991px){
+section{padding:72px 0}
+.topbar{display:none}
+.bar{min-height:70px}
+.brand{width:170px;height:70px}
+.brand img{width:184px;height:184px;margin:-56px 0 0 -7px}
+.toggle{display:block}
+.nav{position:absolute;top:100%;left:0;right:0;background:var(--navy);flex-direction:column;align-items:stretch;padding:0 20px;max-height:0;overflow:hidden;transition:max-height .35s,padding .35s;border-top:1px solid rgba(255,255,255,.06)}
+.nav.open{max-height:80vh;padding:12px 20px 24px}
+.menu{flex-direction:column}
+.menu a{padding:14px 6px;border-bottom:1px solid rgba(255,255,255,.06);border-radius:0}
+.menu a::after{display:none}
+.nav .btn{margin:18px 0 0;justify-content:center}
+.f-grid{grid-template-columns:1fr 1fr}
+.f-about,.f-map{grid-column:1/-1}
+}
+@media(max-width:560px){
+.cta-box{padding:48px 22px}
+.copy{justify-content:center;text-align:center}
+}
 
-<link rel="stylesheet" href="assets/css/style.css">
-
-<link rel="stylesheet" href="assets/css/responsive.css" />
+</style>
 </head>
-<body>
-<!--[if lt IE 10]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+<body class="no-js">
 
+<!-- SVG icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<defs>
+			<symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path
+					d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
+			</symbol>
+			<symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<rect x="2" y="4" width="20" height="16" rx="2" />
+				<path d="m22 7-10 6L2 7" />
+			</symbol>
+			<symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z" />
+				<circle cx="12" cy="10" r="3" />
+			</symbol>
+			<symbol id="i-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<circle cx="11" cy="11" r="7" />
+				<path d="m21 21-4.3-4.3" />
+			</symbol>
+			<symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<circle cx="18" cy="5" r="3" />
+				<circle cx="6" cy="12" r="3" />
+				<circle cx="18" cy="19" r="3" />
+				<path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4" />
+			</symbol>
+			<symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<circle cx="12" cy="12" r="10" />
+				<circle cx="12" cy="12" r="6" />
+				<circle cx="12" cy="12" r="2" />
+			</symbol>
+			<symbol id="i-layout" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<rect x="3" y="3" width="18" height="18" rx="2" />
+				<path d="M3 9h18M9 21V9" />
+			</symbol>
+			<symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path d="M3 3v18h18" />
+				<path d="m7 15 4-5 3 3 5-7" />
+			</symbol>
+			<symbol id="i-bulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path
+					d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V18h6v-1.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z" />
+			</symbol>
+			<symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z" />
+				<circle cx="12" cy="12" r="3" />
+			</symbol>
+			<symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path d="m12 2 10 5-10 5L2 7z" />
+				<path d="m2 17 10 5 10-5M2 12l10 5 10-5" />
+			</symbol>
+			<symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+				stroke-linecap="round" stroke-linejoin="round">
+				<circle cx="12" cy="12" r="10" fill="currentColor" fill-opacity=".14" stroke="none" />
+				<path d="m8 12.5 3 3 5-6" />
+			</symbol>
+			<symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+				stroke-linecap="round" stroke-linejoin="round">
+				<path d="M5 12h14M13 6l6 6-6 6" />
+			</symbol>
+			<symbol id="i-wa" viewBox="0 0 24 24" fill="currentColor">
+				<path
+					d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1l-.9 1.1c-.2.2-.3.2-.6.1a7.5 7.5 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.8 3.4.7.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.200.2-1.400-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15L2 22l5.1-1.3A10 10 0 1 0 12 2z" />
+			</symbol>
+			<symbol id="i-fb" viewBox="0 0 24 24" fill="currentColor">
+				<path
+					d="M14 8.5V6.8c0-.8.2-1.3 1.400-1.300H17V2.200C16.700 2.200 15.800 2 14.700 2 12.300 2 10.700 3.400 10.700 6v2.500H8V12h2.700v10H14V12h2.600l.4-3.500z" />
+			</symbol>
+			<symbol id="i-x" viewBox="0 0 24 24" fill="currentColor">
+				<path
+					d="M17.800 3h3.100l-6.800 7.700L22 21h-6.200l-4.800-6.300L5.400 21H2.300l7.300-8.300L2 3h6.400l4.400 5.800zm-1.100 16.200h1.700L7.400 4.700H5.600z" />
+			</symbol>
+			<symbol id="i-in" viewBox="0 0 24 24" fill="currentColor">
+				<path
+					d="M6.900 8.800H3.500V20h3.400zM5.200 3.500a2 2 0 1 0 0 4 2 2 0 0 0 0-4zM20.500 13.300c0-3-1.600-4.700-4-4.700-1.500 0-2.500.8-3 1.500V8.800H10V20h3.400v-6c0-1.500.7-2.600 2-2.600s1.800.9 1.800 2.600v6h3.300z" />
+			</symbol>
+			<symbol id="i-ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+				stroke-linecap="round" stroke-linejoin="round">
+				<rect x="3" y="3" width="18" height="18" rx="5" />
+				<circle cx="12" cy="12" r="4" />
+				<circle cx="17.500" cy="6.500" r="1" fill="currentColor" />
+			</symbol>
+		
+<symbol id="i-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-chev-l" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 6-6 6 6 6"/></symbol>
+<symbol id="i-chev-r" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 6 6 6-6 6"/></symbol>
+<symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></symbol>
+<linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b5ed7"/><stop offset="1" stop-color="#2aa7ef"/></linearGradient></defs>
+	</svg>
 
+<!-- Top bar -->
+<div class="topbar">
+		<div class="wrap">
+			<ul>
+				<li><a href="tel:+918381094084"><svg>
+							<use href="#i-phone" />
+						</svg>+91 8381094084</a></li>
+				<li><a href="mailto:info.netratechsolutions@gmail.com"><svg>
+							<use href="#i-mail" />
+						</svg>info.netratechsolutions@gmail.com</a></li>
+			</ul>
+			<span><svg
+					style="display:inline;vertical-align:-2px;width:15px;height:15px;color:var(--cyan);margin-right:6px">
+					<use href="#i-pin" />
+				</svg>Dhanori, Pune</span>
+		</div>
+	</div>
 
-<div class="header">
+<!-- Header -->
+<header class="header">
+		<div class="wrap bar">
+			<a href="index.html" class="brand" aria-label="Netra Tech Solutions home"><img
+					src="assets/images/Netra-logo.jpeg" alt="Netra Tech Solutions"></a>
+			<button class="toggle" id="toggle" aria-label="Open menu" aria-expanded="false"
+				aria-controls="nav"><span></span></button>
+			<nav class="nav" id="nav" aria-label="Main">
+				<ul class="menu">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="Service.html" class="active" aria-current="page">Services</a></li>
+					<li><a href="blog.html">Blogs</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+				<a class="btn btn-primary" href="https://wa.link/dwy7cq"><svg>
+						<use href="#i-wa" />
+					</svg>Enquiry Now</a>
+			</nav>
+		</div>
+	</header>
 
-<div class="xs-top-bar">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<ul class="xs-top-bar-info">
-<li>
-<p><a href="tel:+1%20(254)%854-8569"><i class="icon icon-phone3"></i>+1 (254) 854-8569</a></p>
-</li>
-<li>
-<a href="https://html.xpeedstudio.com/cdn-cgi/l/email-protection#157c7b737a55717a78747c7b3b767a78"><i class="icon icon-email"></i><span class="__cf_email__" data-cfemail="ec85828a83ac9b898e9f859889c28f8381">[email&#160;protected]</span></a>
-</li>
-</ul>
+<main>
+<section class="page-hero">
+<div class="wrap">
+<nav aria-label="Breadcrumb"><ol class="crumbs"><li><a href="index.html">Home</a></li><li aria-current="page">Details</li></ol></nav>
+<h1>Social Media Marketing</h1>
 </div>
-<div class="col-md-6">
-<ul class="xs-list list-inline">
-<li><a href="https://www.facebook.com/"><i class="icon icon-facebook"></i></a></li>
-<li><a href="https://twitter.com/"><i class="icon icon-twitter"></i></a></li>
-<li><a href="https://plus.google.com/discover"><i class="icon icon-google-plus"></i></a></li>
-<li><a href="https://www.youtube.com/"><i class="icon icon-youtube-v"></i></a></li>
-<li><a href="https://bd.linkedin.com/"><i class="icon icon-linkedin"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div> 
-
-<header class="xs-header header-main">
-<div class="container">
-<div class="row">
-<div class="col-lg-3">
-<div class="xs-logo-wraper">
-<a href="index.html" class="xs-logo">
-<img src="assets/images/logo.png" alt>
-</a>
-</div>
-</div>
-<div class="col-lg-7 col-md-6">
-<nav class="xs-menus align-to-right">
-<div class="nav-header">
-<a class="nav-brand" href="index.html"></a>
-<div class="nav-toggle"></div>
-</div>
-<div class="nav-menus-wrapper">
-<ul class="nav-menu align-to-right">
-<li><a href="#">HOME</a>
-<ul class="nav-dropdown xs-icon-menu clearfix">
-<li class="single-menu-item">
-<a href="index.html"><i class="icon icon-home2"></i> Home 1</a>
-</li>
-<li class="single-menu-item">
-<a href="index-2.html"><i class="icon icon-home2"></i> Home 2</a>
-</li>
-<li class="single-menu-item">
-<a href="index-3.html"><i class="icon icon-home2"></i> Home 3</a>
-</li>
-<li class="single-menu-item">
-<a href="index-4.html"><i class="icon icon-home3"></i> One Page Style</a>
-</li>
-<li class="single-menu-item">
-<a href="index-5.html"><i class="icon icon-home3"></i> One Page Style Two</a>
-</li>
-</ul>
-</li>
-<li><a href="#">PAGES</a>
-<div class="megamenu-panel xs-icon-menu">
-<div class="row">
-<div class="col-lg-4">
-<div class="single-menu-item">
-<a href="about.html"><i class="icon icon-briefcase"></i>About</a>
-</div>
-<div class="single-menu-item">
-<a href="case-studies.html"><i class="icon icon-line-chart"></i>Case Studies</a>
-</div>
-<div class="single-menu-item">
-<a href="case-details.html"><i class="icon icon-agenda3"></i>Case Details</a>
-</div>
-<div class="single-menu-item">
-<a href="faq.html"><i class="icon icon-question-circle"></i>FAQ</a>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="single-menu-item">
-<a href="team.html"><i class="icon icon-folder2"></i>Team</a>
-</div>
-<div class="single-menu-item">
-<a href="map.html"><i class="icon icon-chat"></i>Map</a>
-</div>
-<div class="single-menu-item">
-<a href="shop.html"><i class="icon icon-shopping-cart-1"></i>Shop</a>
-</div>
-<div class="single-menu-item">
-<a href="shop-single.html"><i class="icon icon-wallet"></i>Shop Single</a>
-</div>
-</div>
-<div class="col-lg-4">
-<div class="single-menu-item">
-<a href="404.html"><i class="icon icon-padlock-1"></i>404</a>
-</div>
-<div class="single-menu-item">
-<a href="pricing.html"><i class="icon icon-direction"></i>Pricing</a>
-</div>
-<div class="single-menu-item">
-<a href="typography.html"><i class="icon icon-agenda-1"></i>Typography</a>
-</div>
-<div class="single-menu-item">
-<a href="testimonial.html"><i class="icon icon-users"></i>Testimonial</a>
-</div>
-</div>
-</div>
-</div>
-</li>
-<li><a href="#">SERVICES</a>
-<ul class="nav-dropdown xs-icon-menu clearfix">
-<li class="single-menu-item">
-<a href="email-marketing.html"><i class="icon icon-envelope2"></i> Email Marketing Services in Dhanori</a>
-</li>
-<li class="single-menu-item">
-<a href="offline-seo.html"><i class="icon icon-dart-board"></i> Offline SEO</a>
-</li>
-<li class="single-menu-item">
-<a href="social-media-marketing.html"><i class="icon icon-like"></i> Social Media Marketing Services in Dhanori </a>
-</li>
-<li class="single-menu-item">
-<a href="lead-generation.html"><i class="icon icon-stats-3"></i> Lead Generation</a>
-</li>
-<li class="single-menu-item">
-<a href="growth-hacking.html"><i class="icon icon-stats-4"></i> Growth Hacking</a>
-</li>
-<li class="single-menu-item">
-<a href="search-engine-optimization.html"><i class="icon icon-search2"></i> Search Engine Optimization Services in Dhanori</a>
-</li>
-</ul>
-</li>
-<li><a href="#">BLOG</a>
-<ul class="nav-dropdown xs-icon-menu clearfix">
-<li class="single-menu-item">
-<a href="blog-grid-with-sidebar.html"><i class="icon icon-file-2"></i>Blog Grid Sidebar</a>
-</li>
-<li class="single-menu-item">
-<a href="blog-list.html"><i class="icon icon-file-2"></i>Blog List</a>
-</li>
-<li class="single-menu-item">
-<a href="blog-single.html"><i class="icon icon-contract"></i>Blog single</a>
-</li>
-</ul>
-</li>
-<li><a href="contact.html">CONTACT</a></li>
-</ul>
-</div>
-</nav>
-</div>
-<div class="col-lg-2 col-md-6">
-<ul class="xs-menu-tools">
-<li>
-<a href="#modal-popup-1" class="languageSwitcher-button xs-modal-popup">
-<span class="xs-flag" style="background-image: url(assets/images/flags/006-united-states.svg);"></span>
-<span class="lang-title">EN</span>
-</a>
-</li>
-<li>
-<a href="#" class="offset-side-bar"><i class="icon icon-online-shopping-cart"></i></a>
-</li>
-<li>
-<a href="#modal-popup-2" class="navsearch-button xs-modal-popup"><i class="icon icon-search"></i></a>
-</li>
-</ul>
-</div>
-</div>
-<div class="navSidebar-wraper clearfix">
-<div class="single-navicon">
-<a href="#" class="navSidebar-button"><i class="icon icon-menu-1"></i></a>
-</div>
-</div>
-</div>
-</header> 
-</div>
-
-
-<section class="inner-banner-area">
-<div class="container">
-<div class="row">
-<div class="col-md-12">
-<div class="inner-banner-content">
-<h1 class="inner-banner-title">Social Media Marketing</h1>
-<ul class="breadcumbs list-inline">
-<li><a href="index.html">Home</a></li>
-<li>Details</li>
-</ul>
-<span class="border-divider style-white"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="banner-image" style="background-image:url('assets/images/backgrounds/background-1.jpg')"></div>
 </section>
 
-
-<section class="xs-section-padding service-info-section" data-scrollax-parent="true">
-<div class="container">
-<div class="row">
-<div class="col-md-8 mx-auto">
-<div class="xs-heading text-center">
-<h2 class="section-title">Increase your client for <span>better position</span> of Business</h2>
-<span class="line"></span>
-</div>
-</div>
-</div>
-<div class="row service-info-wraper">
-<div class="col-lg-6">
-<div class="service-info-summary">
+<section>
+<div class="wrap">
+<div class="sec-head rv"><h2>Increase your client for <span class="hl">better position</span> of Business</h2></div>
+<div class="split">
+<div class="rv">
 <h3>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</h3>
 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-<ul class="xs-list checkbox">
-<li>Separated they live</li>
-<li>Grove right at</li>
-<li>The coast of the</li>
-<li>Semantics, a large</li>
+<ul class="checks">
+<li><svg aria-hidden="true"><use href="#i-check"/></svg>Separated they live</li>
+<li><svg aria-hidden="true"><use href="#i-check"/></svg>Grove right at</li>
+<li><svg aria-hidden="true"><use href="#i-check"/></svg>The coast of the</li>
+<li><svg aria-hidden="true"><use href="#i-check"/></svg>Semantics, a large</li>
 </ul>
-<a href="#" class="btn btn-primary">Know more</a>
+<a class="btn btn-dark" href="#">Know more <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
-</div>
-<div class="col-lg-6">
-<div class="service-info-img">
-<img src="assets/images/service-img-1.png" data-scrollax="properties: { translateY: '-20%' }" alt>
-</div>
-</div>
+<div class="frame rv"><img src="assets/images/service-img-1.png" alt="" loading="lazy"></div>
 </div>
 </div>
 </section>
 
-<section class="xs-section-padding gray-bg service-info-block-area">
-<div class="container">
-<div class="row">
-<div class="col-md-10 mx-auto">
-<div class="xs-heading text-center">
-<h2 class="section-title">Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast</h2>
+<section class="alt">
+<div class="wrap">
+<div class="sec-head wide rv"><h2>Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast</h2></div>
+<div class="blk-grid">
+<div class="blk rv">
+<div class="tile"><img src="assets/images/service-info-icon-1.png" alt="" loading="lazy"></div>
+<h3>Link Building</h3>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 </div>
+<div class="blk rv">
+<div class="tile"><img src="assets/images/service-info-icon-2.png" alt="" loading="lazy"></div>
+<h3>Monthly SEO Task</h3>
+<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 </div>
-</div>
-<div class="row service-block-group">
-<div class="col-md-6 col-lg-4">
-<div class="service-info-block text-center">
-<div class="info-block-header">
-<img src="assets/images/service-info-icon-1.png" alt>
-</div>
-<h3 class="service-info-title">Link Building</h3>
+<div class="blk rv">
+<div class="tile"><img src="assets/images/service-info-icon-3.png" alt="" loading="lazy"></div>
+<h3>On Page SEO</h3>
 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
 </div>
 </div>
-<div class="col-md-6 col-lg-4">
-<div class="service-info-block text-center">
-<div class="info-block-header">
-<img src="assets/images/service-info-icon-2.png" alt>
-</div>
-<h3 class="service-info-title">Monthly SEO Task</h3>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4">
-<div class="service-info-block text-center">
-<div class="info-block-header">
-<img src="assets/images/service-info-icon-3.png" alt>
-</div>
-<h3 class="service-info-title">On Page SEO</h3>
-<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-12">
-<div class="service-img text-center">
-<img src="assets/images/service-img-2.png" alt>
-</div>
-<div class="btn-wraper text-center">
-<a href="#" class="btn btn-primary">Get a Quote</a>
-<a href="#" class="btn btn-outline-primary">Try Free</a>
-</div>
-</div>
-</div>
+<div class="wide-img rv"><img src="assets/images/service-img-2.png" alt="" loading="lazy"></div>
+<div class="btn-row"><a class="btn btn-primary" href="#">Get a Quote</a><a class="btn btn-line" href="#">Try Free</a></div>
 </div>
 </section>
 
-<section class="xs-section-padding our-security-section waypoint-tigger" data-scrollax-parent="true">
-<div class="container">
-<div class="row">
-<div class="col-lg-6">
-<div class="service-summary-img">
-<img src="assets/images/service-summary-1.png" data-scrollax="properties: { translateY: '-20%' }" alt>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="service-summary-text">
-<div class="xs-heading">
-<h2 class="section-title">Security <span>Firewall</span></h2>
-<span class="line"></span>
-</div>
+<section>
+<div class="wrap split">
+<div class="frame rv"><img src="assets/images/service-summary-1.png" alt="" loading="lazy"></div>
+<div class="rv">
+<h2>Security <span class="hl">Firewall</span></h2>
 <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, so absorbed</p>
-<div class="piechats-wraper clearfix">
-<div class="single-piechart">
-<div class="chart" data-percent="76">
-<div class="chart-content">
+<div class="rings">
+<div class="ring" style="--off:75.4">
+<div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="50"/><circle class="fg" cx="60" cy="60" r="50"/></svg><b>76%</b></div>
 <p>Achieved</p>
 </div>
-</div>
-</div>
-<div class="single-piechart">
-<div class="chart" data-percent="93">
-<div class="chart-content">
+<div class="ring" style="--off:21.99">
+<div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="50"/><circle class="fg" cx="60" cy="60" r="50"/></svg><b>93%</b></div>
 <p>Loaded</p>
 </div>
-</div>
-</div>
-<div class="single-piechart">
-<div class="chart" data-percent="85">
-<div class="chart-content">
+<div class="ring" style="--off:47.12">
+<div class="ring-box"><svg viewBox="0 0 120 120" aria-hidden="true"><circle class="bg" cx="60" cy="60" r="50"/><circle class="fg" cx="60" cy="60" r="50"/></svg><b>85%</b></div>
 <p>Done</p>
 </div>
 </div>
 </div>
 </div>
+</section>
+
+<section class="alt">
+<div class="wrap split">
+<div class="rv">
+<h2>Turbo <span class="hl">Boosting</span></h2>
+<ol class="boost">
+<li><p>A wonderful serenity has taken possession of my entire soul, like these sweet <a href="#">mornings</a> of spring which I enjoy with my whole heart. I am alone, and feel the charm</p></li>
+<li><p>I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a <a href="#">thousand unknown</a> plants are noticed by me: when I hear</p></li>
+</ol>
+<a class="btn btn-primary" href="#">Learn More <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
 </div>
+<div class="frame rv"><img src="assets/images/service-summary-2.png" alt="" loading="lazy"></div>
 </div>
+</section>
+
+<section id="cases">
+<div class="wrap">
+<div class="sec-head rv"><span class="eyebrow">Previous Projects</span>
+<h2>Our Case Studies</h2></div>
+<div class="track-nav" data-for="case-track">
+<button class="round" type="button" data-dir="-1" aria-label="Previous case studies"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+<button class="round" type="button" data-dir="1" aria-label="Next case studies"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+</div>
+<div class="track" id="case-track" tabindex="0" role="region" aria-label="Case studies">
+<article class="case">
+<div class="thumb"><img src="assets/images/case/case-4.png" alt="" loading="lazy"></div>
+<div class="case-body"><h3><a href="case-details.html">Million visitor growth</a></h3><p>Visitor, Sales</p></div>
+</article>
+<article class="case">
+<div class="thumb"><img src="assets/images/case/case-5.png" alt="" loading="lazy"></div>
+<div class="case-body"><h3><a href="case-details.html">Twice profit than before</a></h3><p>Marketing, SEO</p></div>
+</article>
+<article class="case">
+<div class="thumb"><img src="assets/images/case/case-6.png" alt="" loading="lazy"></div>
+<div class="case-body"><h3><a href="case-details.html">Built web faster &amp; better</a></h3><p>Marketing, Web</p></div>
+</article>
+<article class="case">
+<div class="thumb"><img src="assets/images/case/case-4.png" alt="" loading="lazy"></div>
+<div class="case-body"><h3><a href="case-details.html">Million visitor growth</a></h3><p>Visitor, Sales</p></div>
+</article>
+<article class="case">
+<div class="thumb"><img src="assets/images/case/case-5.png" alt="" loading="lazy"></div>
+<div class="case-body"><h3><a href="case-details.html">Twice profit than before</a></h3><p>Marketing, SEO</p></div>
+</article>
+<article class="case">
+<div class="thumb"><img src="assets/images/case/case-6.png" alt="" loading="lazy"></div>
+<div class="case-body"><h3><a href="case-details.html">Built web faster &amp; better</a></h3><p>Marketing, Web</p></div>
+</article>
 </div>
 </div>
 </section>
 
-<section class="xs-section-padding boosting-section waypoint-tigger" data-scrollax-parent="true">
-<div class="container">
-<div class="row service-info-wraper">
-<div class="col-lg-6">
-<div class="service-summary-text service-summary-2">
-<div class="xs-heading">
-<h2 class="section-title">Turbo <span>Boosting</span></h2>
-<span class="line"></span>
-</div>
-<div class="boosting-lists">
-<div class="boosting-list">
-<span class="count-number"></span>
-<p>A wonderful serenity has taken possession of my entire soul, like these sweet <a href="#">mornings</a> of spring which I enjoy with my whole heart. I am alone, and feel the charm</p>
-</div>
-<div class="boosting-list">
-<span class="count-number"></span>
-<p>I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a <a href="#">thousand unknown</a> plants are noticed by me: when I hear</p>
-</div>
-</div>
-<div class="btn-wraper">
-<a href="#" class="btn btn-primary">Learn More</a>
-</div>
-</div>
-</div>
-<div class="col-lg-6">
-<div class="service-summary-img">
-<img src="assets/images/service-summary-2.png" data-scrollax="properties: { translateY: '20%' }" alt>
-</div>
-</div>
+<section class="alt" id="testimonials">
+<div class="wrap">
+<div class="sec-head rv"><span class="eyebrow">Client’s love</span>
+<h2>Love from Clients</h2></div>
+<div class="t-grid two">
+<figure class="t-card rv">
+<blockquote>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</blockquote>
+<figcaption class="who"><img src="assets/images/testimonial/testimonial-1.jpg" alt="" loading="lazy"><div><b>Sir Pobon</b><span>Finance Head</span></div></figcaption>
+</figure>
+<figure class="t-card rv">
+<blockquote>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</blockquote>
+<figcaption class="who"><img src="assets/images/testimonial/testimonial-2.jpg" alt="" loading="lazy"><div><b>Sir Pobon</b><span>Finance Head</span></div></figcaption>
+</figure>
+<figure class="t-card rv">
+<blockquote>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</blockquote>
+<figcaption class="who"><img src="assets/images/testimonial/testimonial-3.jpg" alt="" loading="lazy"><div><b>Sir Pobon</b><span>Finance Head</span></div></figcaption>
+</figure>
+<figure class="t-card rv">
+<blockquote>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</blockquote>
+<figcaption class="who"><img src="assets/images/testimonial/testimonial-4.jpg" alt="" loading="lazy"><div><b>Sir Pobon</b><span>Finance Head</span></div></figcaption>
+</figure>
 </div>
 </div>
 </section>
 
-<section class="xs-section-padding gray-bg" id="cases">
-<div class="container">
-<div class="row">
-<div class="col-lg-4 mx-auto">
-<div class="xs-heading text-center">
-<h2 class="section-subtitle">Previous Projects</h2>
-<h3 class="section-title ">Our Case Studies</h3>
-</div>
-</div>
-</div>
-<div class="case-study-slider owl-carousel">
-<div class="case-study-slider-item">
-<div class="single-case-studies text-center wow fadeInUp">
-<div class="image">
-<img src="assets/images/case/case-4.png" alt>
-</div>
-<div class="case-body">
-<h4 class="small"><a href="case-details.html">Million visitor growth</a></h4>
-<p>Visitor, Sales</p>
-</div>
-</div>
-</div>
-<div class="case-study-slider-item">
-<div class="single-case-studies text-center wow fadeInUp" data-wow-duration="1.2s">
-<div class="image">
-<img src="assets/images/case/case-5.png" alt>
-</div>
-<div class="case-body">
-<h4 class="small"><a href="case-details.html">Twice profit than before</a></h4>
-<p>Marketing, SEO</p>
-</div>
-</div>
-</div>
-<div class="case-study-slider-item">
-<div class="single-case-studies text-center wow fadeInUp" data-wow-duration="1.4s">
-<div class="image">
-<img src="assets/images/case/case-6.png" alt>
-</div>
-<div class="case-body">
-<h4 class="small"><a href="case-details.html">Built web faster & better</a></h4>
-<p>Marketing, Web</p>
-</div>
-</div>
-</div>
-<div class="case-study-slider-item">
-<div class="single-case-studies text-center wow fadeInUp">
-<div class="image">
-<img src="assets/images/case/case-4.png" alt>
-</div>
-<div class="case-body">
-<h4 class="small"><a href="case-details.html">Million visitor growth</a></h4>
-<p>Visitor, Sales</p>
-</div>
-</div>
-</div>
-<div class="case-study-slider-item">
-<div class="single-case-studies text-center wow fadeInUp" data-wow-duration="1.2s">
-<div class="image">
-<img src="assets/images/case/case-5.png" alt>
-</div>
-<div class="case-body">
-<h4 class="small"><a href="case-details.html">Twice profit than before</a></h4>
-<p>Marketing, SEO</p>
-</div>
-</div>
-</div>
-<div class="case-study-slider-item">
-<div class="single-case-studies text-center wow fadeInUp" data-wow-duration="1.4s">
-<div class="image">
-<img src="assets/images/case/case-6.png" alt>
-</div>
-<div class="case-body">
-<h4 class="small"><a href="case-details.html">Built web faster & better</a></h4>
-<p>Marketing, Web</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-
-<section class="xs-section-padding testimonial-section" id="testimonials">
-<div class="container">
-<div class="row">
-<div class="col-lg-4 mx-auto">
-<div class="xs-heading text-center">
-<h2 class="section-subtitle">Client’s love</h2>
-<h3 class="section-title ">Love from Clients</h3>
-</div>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-10 mx-auto">
-<div class="testimonial-slider-preview owl-carousel" id="sync3">
-<div class="single-testimonial-preview">
-<p>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</p>
-<span class="border-line"></span>
-</div>
-<div class="single-testimonial-preview">
-<p>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</p>
-<span class="border-line"></span>
-</div>
-<div class="single-testimonial-preview">
-<p>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</p>
-<span class="border-line"></span>
-</div>
-<div class="single-testimonial-preview">
-<p>“ We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit We work systematically to integrated corporate responsibility in our corein business and make our expertise available for the benefit ”</p>
-<span class="border-line"></span>
-</div>
-</div>
-<div class="testimonial-slider-thumb owl-carousel" id="sync4">
-<div class="single-bio-thumb">
-<div class="bio-image">
-<img src="assets/images/testimonial/testimonial-1.jpg" alt>
-</div>
-<div class="bio-info">
-<h4 class="small">Sir Pobon</h4>
-<p>Finance Head</p>
-</div>
-</div>
-<div class="single-bio-thumb">
-<div class="bio-image">
-<img src="assets/images/testimonial/testimonial-2.jpg" alt>
-</div>
-<div class="bio-info">
-<h4 class="small">Sir Pobon</h4>
-<p>Finance Head</p>
-</div>
-</div>
-<div class="single-bio-thumb">
-<div class="bio-image">
-<img src="assets/images/testimonial/testimonial-3.jpg" alt>
-</div>
-<div class="bio-info">
-<h4 class="small">Sir Pobon</h4>
-<p>Finance Head</p>
-</div>
-</div>
-<div class="single-bio-thumb">
-<div class="bio-image">
-<img src="assets/images/testimonial/testimonial-4.jpg" alt>
-</div>
-<div class="bio-info">
-<h4 class="small">Sir Pobon</h4>
-<p>Finance Head</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="big-watermark-icon small-version">
-<i class="icon icon-quote"></i>
-</div>
-</section>
-
-<section class="call-to-action-area">
-<div class="container">
-<div class="row">
-<div class="col-lg-5">
-<div class="call-to-action-content">
+<section class="cta">
+<div class="wrap">
+<div class="cta-box nop rv">
 <h2>Interested To Get Our Featured Service</h2>
-</div>
-</div>
-<div class="col-lg-7">
-<div class="btn-wraper">
-<a href="contact.html" class="btn btn-info icon-right"><i class="icon icon-arrow-right"></i>Get Started Now</a>
-</div>
-</div>
+<div class="actions"><a class="btn btn-primary" href="contact.html">Get Started Now <svg aria-hidden="true"><use href="#i-arrow"/></svg></a></div>
 </div>
 </div>
 </section>
+</main>
 
+<!-- Footer -->
+<footer>
+		<div class="wrap">
+			<div class="f-grid">
+				<div class="f-about">
+					<h4>Netra Tech Solutions</h4>
+					<p>Digital marketing, social media, graphic design and web development in Pune.</p>
+					<a class="line" href="tel:+918381094084"><svg>
+							<use href="#i-phone" />
+						</svg>+91 8381094084</a>
+					<a class="line" href="mailto:info.netratechsolutions@gmail.com"><svg>
+							<use href="#i-mail" />
+						</svg>info.netratechsolutions@gmail.com</a>
+				</div>
+				<div>
+					<h4>Our pages</h4>
+					<ul>
+						<li><a href="about.html">About us</a></li>
+						<li><a href="Service.html">Services</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="Career.html">Career</a></li>
+					</ul>
+				</div>
+				<div>
+					<h4>Services</h4>
+					<ul>
+						<li><a href="Services-details.html">Digital Marketing</a></li>
+						<li><a href="website-design-service.html">Website Design</a></li>
+						<li><a href="#services">Google Ads</a></li>
+						<li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+						<li><a href="search-engine-optimization.html">SEO</a></li>
+					</ul>
+				</div>
+				<div class="f-map">
+					<h4>Find us</h4>
+					<div class="map">
+						<iframe title="Netra Tech Solutions location"
+							src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15125.980137929739!2d73.8968062!3d18.596791!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c78acd69bd81%3A0x45abb2ae5a4b2b32!2sNetra%20Tech%20Solutions%20-%20Digital%20Marketing%2C%20Social%20Media%20Marketing%2C%20Graphic%20Design%2C%20Web%20Development!5e0!3m2!1sen!2sin!4v1723833541925!5m2!1sen!2sin"
+							allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				<span>© 2025 | NetraTech Solutions All Rights Reserved. Designed by <a href="https://netratechsolutions.com/">NetraTech Solutions</a></span>
+				<div class="social">
+					<a href="https://www.facebook.com/people/Netra-Tech-Solutions-Pvt-Ltd/100089187409489/" aria-label="Facebook"><svg>
+							<use href="#i-fb" />
+						</svg></a>
+					<a href="https://x.com/i/flow/login?redirect_after_login=%2FDigital96261341" aria-label="X"><svg>
+							<use href="#i-x" />
+						</svg></a>
+					<a href="https://www.linkedin.com/company/netra-tech-solutions/" aria-label="LinkedIn"><svg>
+							<use href="#i-in" />
+						</svg></a>
+					<a href="https://www.instagram.com/netratechsolutions/" aria-label="Instagram"><svg>
+							<use href="#i-ig" />
+						</svg></a>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-<div class="zoom-anim-dialog mfp-hide modal-language" id="modal-popup-1">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<div class="language-content">
-<p>Switch The Language</p>
-<ul class="flag-lists">
-<li><a href="#"><img src="assets/images/flags/006-united-states.svg" alt><span>English</span></a></li>
-<li><a href="#"><img src="assets/images/flags/002-canada.svg" alt><span>English</span></a></li>
-<li><a href="#"><img src="assets/images/flags/003-vietnam.svg" alt><span>Vietnamese</span></a></li>
-<li><a href="#"><img src="assets/images/flags/004-france.svg" alt><span>French</span></a></li>
-<li><a href="#"><img src="assets/images/flags/005-germany.svg" alt><span>German</span></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+<a class="wa" href="https://wa.link/dwy7cq" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
 
+<script>
+document.body.classList.remove('no-js');
+var tg=document.getElementById('toggle'),nav=document.getElementById('nav');
+tg.addEventListener('click',function(){var o=nav.classList.toggle('open');tg.classList.toggle('open',o);tg.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',function(e){if(e.target.closest('a')){nav.classList.remove('open');tg.classList.remove('open')}});
+var reduce=window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches;
+var rv=document.querySelectorAll('.rv');
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});rv.forEach(function(el,i){el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)})}else{rv.forEach(function(el){el.classList.add('in')})}
 
-<div class="zoom-anim-dialog mfp-hide modal-searchPanel" id="modal-popup-2">
-<div class="modal-dialog modal-lg">
-<div class="modal-content">
-<div class="xs-search-panel">
-<form action="#" method="POST" class="xs-search-group">
-<input type="search" class="form-control" name="search" id="search" placeholder="Search">
-<button type="submit" class="search-button"><i class="icon icon-search"></i></button>
-</form>
-</div>
-</div>
-</div>
-</div>
+var rg=document.querySelectorAll('.ring');
+if('IntersectionObserver' in window){var io3=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io3.unobserve(e.target)}})},{threshold:.4});rg.forEach(function(el){io3.observe(el)})}else{rg.forEach(function(el){el.classList.add('in')})}
 
+document.querySelectorAll('.track-nav').forEach(function(nv){
+var tr=document.getElementById(nv.getAttribute('data-for'));if(!tr)return;
+var pv=nv.querySelector('[data-dir="-1"]'),nx=nv.querySelector('[data-dir="1"]');
+function upd(){pv.disabled=tr.scrollLeft<4;nx.disabled=tr.scrollLeft+tr.clientWidth>=tr.scrollWidth-4}
+function go(d){var c=tr.firstElementChild,w=c?c.getBoundingClientRect().width+24:300;tr.scrollBy({left:d*w,behavior:reduce?'auto':'smooth'})}
+pv.addEventListener('click',function(){go(-1)});nx.addEventListener('click',function(){go(1)});
+tr.addEventListener('scroll',upd,{passive:true});window.addEventListener('resize',upd);upd()});
 
-<div class="xs-sidebar-group cart-group">
-<div class="xs-overlay black-bg"></div>
-<div class="xs-sidebar-widget">
-<div class="sidebar-widget-container">
-<div class="widget-heading media">
-<div class="media-body">
-<a href="#" class="close-side-widget">
-<i class="icon icon-cross"></i>
-</a>
-</div>
-</div>
-<div class="xs-empty-content">
-<h3 class="widget-title">Shopping cart</h3>
-<h4 class="xs-title">No products in the cart.</h4>
-<p class="empty-cart-icon">
-<i class="icon icon-shopping-cart"></i>
-</p>
-<p class="xs-btn-wraper">
-<a class="btn btn-primary" href="shop.html">Return To Shop</a>
-</p>
-</div>
-</div>
-</div>
-</div>  
-
-
-<div class="xs-sidebar-group info-group">
-<div class="xs-overlay black-bg"></div>
-<div class="xs-sidebar-widget">
-<div class="sidebar-widget-container">
-<div class="widget-heading">
-<a href="#" class="close-side-widget">
-<i class="icon icon-cross"></i>
-</a>
-</div>
-<div class="sidebar-textwidget">
-<div class="sidebar-logo-wraper">
-<a href="index.html">
-<img src="assets/images/logo.png" alt="sidebar logo">
-</a>
-</div>
-<p>Far far away, behind the word moun tains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of </p>
-<ul class="sideabr-list-widget">
-<li>
-<div class="media">
-<div class="d-flex">
-<img src="assets/images/location.png" alt>
-</div>
-<div class="media-body">
-<p>759 Pinewood Avenue</p>
-<span>Marquette, Michigan</span>
-</div>
-</div>
-</li>
-<li>
-<div class="media">
-<div class="d-flex">
-<img src="assets/images/mail.png" alt>
-</div>
-<div class="media-body">
-<a href="https://html.xpeedstudio.com/cdn-cgi/l/email-protection#51383f373e11353e3c30383f7f323e3c"><span class="__cf_email__" data-cfemail="452c2b232a05212a28242c2b6b262a28">[email&#160;protected]</span></a>
-<span>Online Support</span>
-</div>
-</div>
-</li>
-<li>
-<div class="media">
-<div class="d-flex">
-<img src="assets/images/phone.png" alt>
-</div>
-<div class="media-body">
-<p>906-624-2565</p>
-<span>Mon-Fri 8am-5pm</span>
-</div>
-</div>
-</li>
-</ul>
-<div class="subscribe-from">
-<p>Get Subscribed!</p>
-<form action="#" method="POST" class="subscribe-form">
-<label for="sub-input"></label>
-<div class="form-group">
-<input type="email" name="email" id="sub-input" placeholder="Enter your mail here" class="form-control">
-<button class="sub-btn" type="submit"><i class="icon icon-arrow-right"></i></button>
-</div>
-</form>
-</div>
-<ul class="social-list version-2">
-<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-<li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
-<li><a href="https://bd.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-<li><a href="https://vimeo.com/" class="vimeo"><i class="fa fa-vimeo"></i></a></li>
-</ul>
-<div class="text-center">
-<a href="https://themeforest.net/user/xpeedstudio/portfolio" class="btn btn-primary">Purchase Now</a>
-</div>
-</div>
-</div>
-</div>
-</div>  
-
-<footer class="xs-footer-section">
-<div class="container">
-<div class="footer-top-area">
-<div class="row">
-<div class="col-md-4">
-<div class="footer-logo">
-<a href="index.html">
-<img src="assets/images/footer-logo.png" alt>
-</a>
-</div>
-</div>
-<div class="col-md-8">
-<ul class="address-info-list list-inline">
-<li>
-<div class="address-icon">
-<img src="assets/images/pin.png" alt>
-</div>
-<div class="address-info"><a href="https://www.google.com/maps/place/1010+Grand+St,+Brooklyn,+NY+11211,+USA/@40.7133521,-73.9370686,17z/data=!3m1!4b1!4m5!3m4!1s0x89c25954b2d0b20d:0xb03e8d55cdb687bc!8m2!3d40.7133521!4d-73.9348799">1010 Grand Avenue <br> New York, USA</a></div>
-</li>
-<li>
-<div class="address-icon"><img src="assets/images/massage.png" alt></div>
-<div class="address-info"><a href="tel:009-215-5596">009-215-5596</a> ( Toll free ) <br> <a href="https://html.xpeedstudio.com/cdn-cgi/l/email-protection#670e09010827021f060a170b024904080a"><span class="__cf_email__" data-cfemail="dfb6b1b9b09fbaa7beb2afb3baf1bcb0b2">[email&#160;protected]</span></a></div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="footer-main">
-<div class="container">
-<div class="row">
-<div class="col-md-6 col-lg-3">
-<div class="footer-widget">
-<h4 class="xs-content-title">Company</h4>
-<ul class="xs-lsit">
-<li><a href="about.html">About us</a></li>
-<li><a href="#">Partners</a></li>
-<li><a href="#">Case Studies</a></li>
-<li><a href="#">Our Team</a></li>
-<li><a href="#">Career</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="footer-widget">
-<h4 class="xs-content-title">Services</h4>
-<ul class="xs-lsit">
-<li><a href="#">Real Time Analytics</a></li>
-<li><a href="#">Online Marketing</a></li>
-<li><a href="#">SEO Services</a></li>
-<li><a href="#">Pay Per Click</a></li>
-<li><a href="#">Email Marketing</a></li>
-<li><a href="#">Advertisement</a></li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="footer-widget">
-<h4 class="xs-content-title">Articles</h4>
-<ul class="articles-list">
-<li>
-<a class="entry-title" href="blog-single.html">Twice profit than before you ever</a>
-<span class="entry-meta"><i class="icon icon-clock"></i> January 14, 2018</span>
-</li>
-<li>
-<a class="entry-title" href="blog-single.html">Twice profit than before you ever</a>
-<span class="entry-meta"><i class="icon icon-clock"></i> January 14, 2018</span>
-</li>
-<li>
-<a class="entry-title" href="blog-single.html">Twice profit than before you ever</a>
-<span class="entry-meta"><i class="icon icon-clock"></i> January 14, 2018</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="col-md-6 col-lg-3">
-<div class="footer-widget">
-<h4 class="xs-content-title">Request a quote</h4>
-<form action="#" class="contact-form" method="post">
-<input type="email" name="email" placeholder="Email" class="form-control">
-<textarea name="message" class="form-control" placeholder="Message" cols="30" rows="10"></textarea>
-<input type="submit" value="Submit now" class="submit-btn">
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="partner-area-wraper">
-<div class="container">
-<div class="partner-area">
-<div class="row">
-<div class="col-md-8">
-<ul class="xs-lsit list-inline">
-<li class="title">PARTNERSHIP :</li>
-<li><img src="assets/images/partner/partner-1.png" alt></li>
-<li><img src="assets/images/partner/partner-2.png" alt></li>
-<li><img src="assets/images/partner/partner-3.png" alt></li>
-<li><img src="assets/images/partner/partner-4.png" alt></li>
-</ul>
-</div>
-<div class="col-md-4">
-<ul class="xs-list list-inline text-right">
-<li><img src="assets/images/card/visa.png" alt></li>
-<li><img src="assets/images/card/master-card.png" alt></li>
-<li><img src="assets/images/card/discover.png" alt></li>
-<li><img src="assets/images/card/american-express.png" alt></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="copyright">
-<div class="container">
-<div class="row">
-<div class="col-md-6">
-<div class="copyright-text">
-<p>Copyright &copy; 2018, All Right Reserved <a href="https://themeforest.net/user/xpeedstudio/portfolio">SEOPress</a></p>
-</div>
-</div>
-<div class="col-md-6">
-<ul class="social-list">
-<li><a href="https://www.facebook.com/" class="facebook"><i class="fa fa-facebook"></i></a></li>
-<li><a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a></li>
-<li><a href="https://bd.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
-<li><a href="https://www.instagram.com/" class="instagram"><i class="fa fa-instagram"></i></a></li>
-<li><a href="https://plus.google.com/discover" class="googlePlus"><i class="fa fa-google-plus"></i></a></li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</footer>
-
-
-<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery-3.2.1.min.js"></script>
-<script src="assets/js/plugins.js"></script>
-<script src="assets/js/Popper.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/owl.carousel.min.js"></script>
-<script src="assets/js/jquery.ajaxchimp.min.js"></script>
-<script src="assets/js/jquery.waypoints.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3&amp;key=AIzaSyCy7becgYuLwns3uumNm6WdBYkBpLfy44k"></script>
-<script src="assets/js/scrollax.js"></script>
-<script src="assets/js/jquery.themepunch.revolution.min.js"></script>
-<script src="assets/js/jquery.themepunch.tools.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
-<script src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
-<script src="assets/js/jquery.easypiechart.min.js"></script>
-<script src="assets/js/delighters.js"></script>
-<script src="assets/js/main.js"></script> 
+</script>
 </body>
-
-<!-- Mirrored from html.xpeedstudio.com/upturn/social-media-marketing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 07 Aug 2024 03:37:31 GMT -->
 </html>

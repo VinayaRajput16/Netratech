@@ -485,6 +485,29 @@
 .crumbs [aria-current]{color:#fff}
 .page-hero h1{color:#fff;font-size:clamp(34px,5.2vw,56px);font-weight:800;max-width:900px}
 @media(max-width:991px){.page-hero{padding:52px 0 60px}}
+.checks {
+			margin: 18px 0 26px;
+			display: grid;
+			gap: 10px
+		}
+		.checks li {
+			display: flex;
+			gap: 10px;
+			align-items: flex-start;
+			font-weight: 600;
+			color: var(--ink);
+			font-size: 15px
+		}
+		.checks svg {
+			width: 20px;
+			height: 20px;
+			color: #12a66a;
+			flex-shrink: 0;
+			margin-top: 2px
+		}
+/* alignment tweak taken from the hand edit in search-engine-optimization_1.html */
+.split .checks li{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.split .checks li svg{width:22px;height:22px;min-width:22px;flex-shrink:0;margin-top:0}
 .alt{background:var(--bg)}
 .sec-head.left{margin-left:0;margin-right:0;text-align:left}
 .split{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -632,19 +655,7 @@ section{padding:72px 0}
 .cta-box{padding:48px 22px}
 .copy{justify-content:center;text-align:center}
 }
-.split .checks li {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
-}
 
-.split .checks li svg {
-    width: 22px;
-    height: 22px;
-    min-width: 22px;
-    flex-shrink: 0;
-}
 </style>
 </head>
 <body class="no-js">
@@ -979,11 +990,11 @@ section{padding:72px 0}
 				<div>
 					<h4>Services</h4>
 					<ul>
-						<li><a href="#">Digital Marketing</a></li>
-						<li><a href="#">Website Design</a></li>
-						<li><a href="#">Google Ads</a></li>
-						<li><a href="#">Social Media Marketing</a></li>
-						<li><a href="#">SEO</a></li>
+						<li><a href="Services-details.html">Digital Marketing</a></li>
+						<li><a href="website-design-service.html">Website Design</a></li>
+						<li><a href="#services">Google Ads</a></li>
+						<li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+						<li><a href="search-engine-optimization.html">SEO</a></li>
 					</ul>
 				</div>
 				<div class="f-map">
