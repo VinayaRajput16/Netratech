@@ -1085,6 +1085,115 @@ section{padding:72px 0}
 .copy{justify-content:center;text-align:center}
 }
 
+
+/* Mobile hero layout fix */
+@media (max-width: 991px) {
+    .hero.sv .wrap {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 34px;
+    }
+
+    .hero.sv .vis {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero.sv {
+        padding: 34px 0 52px;
+    }
+
+    .hero.sv .wrap {
+        gap: 30px;
+    }
+
+    .hero.sv .wrap > div:first-child {
+        min-width: 0;
+    }
+
+    .hero.sv .crumbs {
+        gap: 6px 9px;
+        margin-bottom: 16px;
+        font-size: 12px;
+    }
+
+    .hero.sv .pill {
+        max-width: 100%;
+        margin-bottom: 16px;
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .hero.sv h1 {
+        font-size: clamp(30px, 8vw, 38px);
+        line-height: 1.14;
+        overflow-wrap: break-word;
+    }
+
+    .hero.sv p.lead {
+        margin: 16px 0 22px;
+        font-size: 15.5px;
+        line-height: 1.6;
+    }
+
+    .hero.sv .actions {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .hero.sv .actions .btn {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 16px;
+        font-size: 14px;
+    }
+
+    .hero.sv .tags {
+        gap: 8px;
+        margin-top: 22px;
+    }
+
+    .hero.sv .tags span {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .hero.sv .vis {
+        max-width: 460px;
+        margin: 0 auto;
+    }
+
+    .hero.sv .vcard {
+        padding: 16px;
+        border-radius: 17px;
+    }
+
+    .hero.sv .float-chip {
+        max-width: calc(100% - 16px);
+        gap: 7px;
+        padding: 8px 10px;
+        font-size: 11px;
+    }
+
+    .hero.sv .float-chip svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .hero.sv .chip-b {
+        top: -12px;
+        right: 8px;
+    }
+
+    .hero.sv .chip-a {
+        left: 8px;
+        bottom: -12px;
+    }
+}
+
 </style>
 </head>
 <body class="no-js">
